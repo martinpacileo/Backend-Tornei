@@ -1,6 +1,44 @@
+# Dipendenze
 node_modules/
+
+# Variabili d'ambiente — MAI caricare su git
 .env
+.env.local
+.env.*.local
+
+# Upload utenti — solo uploads/.gitkeep è tracciato
 uploads/logos/
+uploads/*.jpg
+uploads/*.jpeg
+uploads/*.png
+uploads/*.webp
+uploads/*.gif
+
+# Prisma — client generato, non necessario nel repo
+node_modules/.prisma/
+
+# Log
+logs/
 *.log
-.DS_Store
+npm-debug.log*
+yarn-debug.log*
+
+# Build / cache
 dist/
+build/
+.cache/
+.tmp/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test
+coverage/
